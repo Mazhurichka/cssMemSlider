@@ -4,8 +4,91 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./style.css" />
     <title>cssMemSlider</title>
   </head>
-  <body></body>
+  <body>
+    <div class="contant">
+      <h1 class="main-title">cssMemSlider</h1>
+
+      <div class="slider-wrapper">
+        <div class="slider">
+          <div class="slider-nav">
+            <label class="slider-nav__control" for="control-1"></label>
+            <label class="slider-nav__control" for="control-2"></label>
+            <label class="slider-nav__control" for="control-3"></label>
+            <label class="slider-nav__control" for="control-4"></label>
+          </div>
+
+          <div class="slider-items">
+            <input name="button" class="custom-radio" id="control-1" type="radio" />
+            <input name="button" id="control-2" type="radio" />
+            <input name="button" id="control-3" type="radio" />
+            <input name="button" id="control-4" type="radio" />
+
+            <div class="slider-item control-1">
+              <figure>
+              <img
+                    class="slider-photo"
+                    src="./assets/img/mariupol-1.jpg"
+                    alt="mariupol-1"
+                  />
+                  <figcaption class="slider-caption">#Save Mariupol</figcaption>
+              </figure>
+            </div>
+            <div class="slider-item control-2">
+              <figure>
+                <img
+                    class="slider-photo"
+                    src="./assets/img/mariupol-2.jpg"
+                    alt="mariupol-1"
+                  />
+                  <figcaption class="slider-caption">
+                    #Save Mariupol city
+                  </figcaption>
+              </figure>
+            </div>
+            <div class="slider-item control-3">
+              <figure>
+                <img
+                  class="slider-photo"
+                  src="./assets/img/mariupol-3.jpg"
+                  alt="mariupol-1"
+                />
+                <figcaption class="slider-caption">
+                  #Save people in Mariupol
+                </figcaption>
+              </figure>
+            </div>
+            <div class="slider-item control-4">
+              <figure>
+               <img
+                    class="slider-photo"
+                    src="./assets/img/azovstal.jpg"
+                    alt="azovstal"
+                  />
+                  <figcaption class="slider-caption">#Save AZOVSTAL</figcaption>
+              </figure>
+            </div>
+          </div>
+
+          <div class="slider-controls">
+            <!-- <input name="button" id="control-1" type="radio" />
+            <input name="button" id="control-2" type="radio" />
+            <input name="button" id="control-3" type="radio" />
+            <input name="button" id="control-4" type="radio" /> -->
+          </div>
+        </div>
+      </div>
+
+      <div class="spica">
+        <img src="./assets/img/spica.png" alt="spica" class="spica-img" />
+      </div>
+    </div>
+  </body>
 </html>
