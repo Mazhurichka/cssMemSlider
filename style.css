@@ -75,6 +75,71 @@ p {
 .slider-items .custom-radio:checked + label {
   border: 3px solid rgb(238, 238, 247);
   background-color: rgba(0, 0, 0, 1);
+  transition: opacity 5s ease;
+}
+
+.slider-items #control-1:not(:checked) ~ .control-1 figure > .slider-caption {
+  opacity: 0;
+  transition: opacity 5s ease;
+  background: linear-gradient(blue, yellow);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.slider-items #control-1:checked ~ .control-1 figure > .slider-caption {
+  opacity: 1;
+  background: linear-gradient(blue, 73%, yellow 14%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: opacity 5s ease;
+}
+
+.slider-items #control-2:not(:checked) ~ .control-2 figure > .slider-caption {
+  opacity: 0;
+  transition: opacity 5s ease;
+  background: linear-gradient(blue, yellow);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.slider-items #control-2:checked ~ .control-2 figure > .slider-caption {
+  opacity: 1;
+  background: linear-gradient(blue, 73%, yellow 14%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: opacity 5s ease;
+}
+
+.slider-items #control-3:not(:checked) ~ .control-3 figure > .slider-caption {
+  opacity: 0;
+  transition: opacity 5s ease;
+  background: linear-gradient(blue, yellow);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.slider-items #control-3:checked ~ .control-3 figure > .slider-caption {
+  opacity: 1;
+  background: linear-gradient(blue, 73%, yellow 14%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: opacity 5s ease;
+}
+
+.slider-items #control-4:not(:checked) ~ .control-4 figure > .slider-caption {
+  opacity: 0;
+  transition: opacity 5s ease;
+  background: linear-gradient(blue, yellow);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.slider-items #control-4:checked ~ .control-4 figure > .slider-caption {
+  opacity: 1;
+  background: linear-gradient(blue, 73%, yellow 14%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: opacity 5s ease;
 }
 
 [class*='item-'] {
@@ -82,8 +147,6 @@ p {
   bottom: 7%;
   z-index: 123;
 }
-
-
 
 .item-1 {
   right: 13%;
